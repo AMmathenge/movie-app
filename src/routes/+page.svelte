@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import { PopularMovies } from '$lib/components'
+    import { SearchBar } from '$lib/components'
+    
+    export let data;
+    console.log(data)
+    
+</script>
+<SearchBar/>
+<PopularMovies movies={data.props?.data}/>
+
+
