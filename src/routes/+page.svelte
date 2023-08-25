@@ -3,7 +3,7 @@
     import { SearchBar } from '$lib/components'
     
     export let data;
-    console.log(data)
+    
     
 </script>
 <SearchBar/>
